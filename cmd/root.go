@@ -7,12 +7,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// Execute menjalankan root command CLI
+// Execute run root command CLI
 func Execute() error {
 	return rootCmd.Execute()
 }
 
-// rootCmd adalah command utama CLI
+// rootCmd is am main command CLI
 var rootCmd = &cobra.Command{
 	Use:   "inventaris",
 	Short: "Aplikasi Sistem Inventaris Kantor CLI",
@@ -49,7 +49,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
-// handleKategoriMenu menangani sub-menu kategori
+// handleKategoriMenu handle sub-menu kategori
 func handleKategoriMenu() {
 	for {
 		utils.ClearScreen()
@@ -82,7 +82,7 @@ func handleKategoriMenu() {
 	}
 }
 
-// handleBarangMenu menangani sub-menu barang
+// handleBarangMenu handle sub-menu barang
 func handleBarangMenu() {
 	for {
 		utils.ClearScreen()
@@ -115,7 +115,7 @@ func handleBarangMenu() {
 	}
 }
 
-// handleLaporanMenu menangani sub-menu laporan dan pengecekan
+// handleLaporanMenu handle sub-menu report
 func handleLaporanMenu() {
 	for {
 		utils.ClearScreen()
